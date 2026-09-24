@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "mkdir -p public/uploads && chmod -R 777 public/uploads && chmod 777 prisma && chmod 666 prisma/dev.db && rm -rf .next && cp -a .next-prebuilt/. .next/",
+    "build": "mkdir -p public/uploads && chmod -R 777 public/uploads && chmod 777 prisma && chmod 666 prisma/dev.db && rm -rf .next && cp -a .next-prebuilt/. .next/ && chmod -R 777 .next",
     "start": "next start",
     "lint": "eslint",
     "postinstall": "prisma generate || exit 0"
