@@ -2,6 +2,7 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/logs/route": "app/api/logs/route.js",
   "/api/track/route": "app/api/track/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/kamar-belakang/buttons/page": "app/kamar-belakang/buttons/page.js",

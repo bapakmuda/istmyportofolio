@@ -10,8 +10,8 @@ R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidde
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js")
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_0q-w892.js")
 R.c("server/chunks/ssr/src_app_kamar-belakang_layout_tsx_16x6tjl._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__0xvc6th._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__1y1r1mk._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__066u0ic._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__015fpcx._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_0juh33g._.js")
 R.m(66834)
 module.exports=R.m(66834).exports

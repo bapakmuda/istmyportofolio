@@ -16,7 +16,8 @@ export async function createSkill(formData: FormData) {
     revalidatePath("/kamar-belakang/skills");
   } catch (error: any) {
     const fs = require('fs');
-    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createSkill: ' + error.message + '\n' + error.stack + '\n');
+    fs.appendFileSync('/tmp/portfolio-error.log', new Date().toISOString() + ' createSkill: ' + error.message + '\n' + error.stack + '\n');
+    console.error('SERVER ACTION ERROR:', error);
     throw error;
   }
   redirect("/kamar-belakang/skills");
@@ -139,7 +140,8 @@ export async function createProject(formData: FormData) {
     revalidatePath("/kamar-belakang/projects");
   } catch (error: any) {
     const fs = require('fs');
-    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createProject: ' + error.message + '\n' + error.stack + '\n');
+    fs.appendFileSync('/tmp/portfolio-error.log', new Date().toISOString() + ' createProject: ' + error.message + '\n' + error.stack + '\n');
+    console.error('SERVER ACTION ERROR:', error);
     throw error;
   }
   redirect("/kamar-belakang/projects");
@@ -168,7 +170,8 @@ export async function updateProject(formData: FormData) {
     revalidatePath("/kamar-belakang/projects");
   } catch (error: any) {
     const fs = require('fs');
-    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' updateProject: ' + error.message + '\n' + error.stack + '\n');
+    fs.appendFileSync('/tmp/portfolio-error.log', new Date().toISOString() + ' updateProject: ' + error.message + '\n' + error.stack + '\n');
+    console.error('SERVER ACTION ERROR:', error);
     throw error;
   }
   redirect("/kamar-belakang/projects");

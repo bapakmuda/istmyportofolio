@@ -2,6 +2,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/api/logs/route": "/api/logs",
   "/api/track/route": "/api/track",
   "/favicon.ico/route": "/favicon.ico",
   "/kamar-belakang/buttons/page": "/kamar-belakang/buttons",
