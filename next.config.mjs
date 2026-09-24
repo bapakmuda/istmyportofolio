@@ -10,6 +10,9 @@ const nextConfig = {
   env: {
     NEXTAUTH_URL: "https://dadoftwo.web.id",
     NEXTAUTH_SECRET: "firdyawan_super_secret_key_12345!"
+  },
+  images: {
+    unoptimized: true
   }
 };
 
