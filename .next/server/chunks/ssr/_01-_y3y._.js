@@ -1,0 +1,3 @@
+module.exports=[33354,(a,b,c)=>{"use strict";c._=function(a){return a&&a.__esModule?a:{default:a}}},13237,a=>{"use strict";var b=a.i(87924);a.s(["default",0,function({action:a,id:c,children:d,className:e="",confirmMessage:f="Are you sure you want to delete this?"}){return(0,b.jsxs)("form",{action:a,onSubmit:a=>{window.confirm(f)||a.preventDefault()},className:e,children:[(0,b.jsx)("input",{type:"hidden",name:"id",value:c}),d]})}])}];
+
+//# sourceMappingURL=_01-_y3y._.js.map

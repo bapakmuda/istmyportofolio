@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/auth/[...nextauth]",
+      "regex": "^/api/auth/(.+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPnextauth": "nxtPnextauth"
+      },
+      "namedRegex": "^/api/auth/(?<nxtPnextauth>.+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/track",
+      "regex": "^/api/track(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/track(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang",
+      "regex": "^/kamar\\-belakang(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/buttons",
+      "regex": "^/kamar\\-belakang/buttons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/buttons(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/certificates",
+      "regex": "^/kamar\\-belakang/certificates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/certificates(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/history",
+      "regex": "^/kamar\\-belakang/history(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/history(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/login",
+      "regex": "^/kamar\\-belakang/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/login(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/projects",
+      "regex": "^/kamar\\-belakang/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/projects(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/skills",
+      "regex": "^/kamar\\-belakang/skills(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/skills(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/socials",
+      "regex": "^/kamar\\-belakang/socials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/socials(?:/)?$"
+    },
+    {
+      "page": "/kamar-belakang/visitors",
+      "regex": "^/kamar\\-belakang/visitors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kamar\\-belakang/visitors(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
