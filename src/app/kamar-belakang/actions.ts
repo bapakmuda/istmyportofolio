@@ -14,12 +14,12 @@ export async function createSkill(formData: FormData) {
     await prisma.skill.create({ data: { name, icon } });
     revalidatePath("/");
     revalidatePath("/kamar-belakang/skills");
-    redirect("/kamar-belakang/skills");
   } catch (error: any) {
     const fs = require('fs');
     fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createSkill: ' + error.message + '\n' + error.stack + '\n');
     throw error;
   }
+  redirect("/kamar-belakang/skills");
 }
 
 export async function updateSkill(formData: FormData) {
@@ -134,13 +134,12 @@ export async function createProject(formData: FormData) {
     });
     revalidatePath("/");
     revalidatePath("/kamar-belakang/projects");
-    redirect("/kamar-belakang/projects");
   } catch (error: any) {
-    if (error.message === 'NEXT_REDIRECT') throw error;
     const fs = require('fs');
     fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createProject: ' + error.message + '\n' + error.stack + '\n');
     throw error;
   }
+  redirect("/kamar-belakang/projects");
 }
 
 export async function updateProject(formData: FormData) {
@@ -164,13 +163,12 @@ export async function updateProject(formData: FormData) {
     await prisma.project.update({ where: { id }, data });
     revalidatePath("/");
     revalidatePath("/kamar-belakang/projects");
-    redirect("/kamar-belakang/projects");
   } catch (error: any) {
-    if (error.message === 'NEXT_REDIRECT') throw error;
     const fs = require('fs');
     fs.appendFileSync('./public/error.log', new Date().toISOString() + ' updateProject: ' + error.message + '\n' + error.stack + '\n');
     throw error;
   }
+  redirect("/kamar-belakang/projects");
 }
 
 export async function deleteProject(formData: FormData) {
