@@ -1,3 +1,0 @@
-module.exports=[13237,a=>{"use strict";var b=a.i(87924);a.s(["default",0,function({action:a,id:c,children:d,className:e="",confirmMessage:f="Are you sure you want to delete this?"}){return(0,b.jsxs)("form",{action:a,onSubmit:a=>{window.confirm(f)||a.preventDefault()},className:e,children:[(0,b.jsx)("input",{type:"hidden",name:"id",value:c}),d]})}])}];
-
-//# sourceMappingURL=src_components_admin_DeleteForm_tsx_20rdqhi._.js.map

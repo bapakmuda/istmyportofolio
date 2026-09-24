@@ -1,3 +1,0 @@
-module.exports=[60395,a=>{"use strict";a.s(["default",()=>b]);let b=(0,a.i(11857).registerClientReference)(function(){throw Error("Attempted to call the default export of [project]/src/app/kamar-belakang/layout.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"[project]/src/app/kamar-belakang/layout.tsx","default")},78292,a=>{"use strict";var b=a.i(60395);a.n(b)},39092,function(a){a.n(a.i(78292))}];
-
-//# sourceMappingURL=src_app_kamar-belakang_layout_tsx_16x6tjl._.js.map
