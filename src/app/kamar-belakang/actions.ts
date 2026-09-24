@@ -102,7 +102,10 @@ async function saveFile(file: File | null): Promise<string | null> {
   const buffer = Buffer.from(bytes);
   const ext = path.extname(file.name);
   const filename = `${Date.now()}-${Math.round(Math.random() * 1000)}${ext}`;
-  const filepath = path.join(process.cwd(), "public/uploads", filename);
+  const uploadDir = path.join(process.cwd(), "public/uploads");
+  const { mkdir } = require("fs/promises");
+  await mkdir(uploadDir, { recursive: true });
+  const filepath = path.join(uploadDir, filename);
   await writeFile(filepath, buffer);
   return `/uploads/${filename}`;
 }
