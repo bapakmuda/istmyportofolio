@@ -2,7 +2,8 @@
 const nextConfig = {
   output: "standalone",
   serverActions: {
-    allowedOrigins: ["dadoftwo.web.id", "*.dadoftwo.web.id", "www.dadoftwo.web.id", "localhost:3000"]
+    allowedOrigins: ["dadoftwo.web.id", "*.dadoftwo.web.id", "www.dadoftwo.web.id", "localhost:3000"],
+    bodySizeLimit: "10mb"
   },
   env: {
     NEXTAUTH_URL: "https://dadoftwo.web.id",

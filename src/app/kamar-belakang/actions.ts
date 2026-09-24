@@ -119,44 +119,58 @@ async function deleteFile(fileUrl: string | null) {
 
 // --- PROJECTS ---
 export async function createProject(formData: FormData) {
-  const title = formData.get("title") as string;
-  const description = formData.get("description") as string;
-  const hashtags = formData.get("hashtags") as string;
-  const imageFile = formData.get("image") as File;
-  
-  if (!title || !description) return;
-  
-  const imageUrl = await saveFile(imageFile);
-  
-  await prisma.project.create({ 
-    data: { title, description, hashtags, image: imageUrl } 
-  });
-  revalidatePath("/");
-  revalidatePath("/kamar-belakang/projects");
-  redirect("/kamar-belakang/projects");
+  try {
+    const title = formData.get("title") as string;
+    const description = formData.get("description") as string;
+    const hashtags = formData.get("hashtags") as string;
+    const imageFile = formData.get("image") as File;
+    
+    if (!title || !description) return;
+    
+    const imageUrl = await saveFile(imageFile);
+    
+    await prisma.project.create({ 
+      data: { title, description, hashtags, image: imageUrl } 
+    });
+    revalidatePath("/");
+    revalidatePath("/kamar-belakang/projects");
+    redirect("/kamar-belakang/projects");
+  } catch (error: any) {
+    if (error.message === 'NEXT_REDIRECT') throw error;
+    const fs = require('fs');
+    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createProject: ' + error.message + '\n' + error.stack + '\n');
+    throw error;
+  }
 }
 
 export async function updateProject(formData: FormData) {
-  const id = formData.get("id") as string;
-  const title = formData.get("title") as string;
-  const description = formData.get("description") as string;
-  const hashtags = formData.get("hashtags") as string;
-  const imageFile = formData.get("image") as File;
-  
-  if (!id || !title || !description) return;
-  
-  const data: any = { title, description, hashtags };
-  
-  if (imageFile && imageFile.size > 0) {
-    const project = await prisma.project.findUnique({ where: { id } });
-    if (project?.image) await deleteFile(project.image);
-    data.image = await saveFile(imageFile);
+  try {
+    const id = formData.get("id") as string;
+    const title = formData.get("title") as string;
+    const description = formData.get("description") as string;
+    const hashtags = formData.get("hashtags") as string;
+    const imageFile = formData.get("image") as File;
+    
+    if (!id || !title || !description) return;
+    
+    const data: any = { title, description, hashtags };
+    
+    if (imageFile && imageFile.size > 0) {
+      const project = await prisma.project.findUnique({ where: { id } });
+      if (project?.image) await deleteFile(project.image);
+      data.image = await saveFile(imageFile);
+    }
+    
+    await prisma.project.update({ where: { id }, data });
+    revalidatePath("/");
+    revalidatePath("/kamar-belakang/projects");
+    redirect("/kamar-belakang/projects");
+  } catch (error: any) {
+    if (error.message === 'NEXT_REDIRECT') throw error;
+    const fs = require('fs');
+    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' updateProject: ' + error.message + '\n' + error.stack + '\n');
+    throw error;
   }
-  
-  await prisma.project.update({ where: { id }, data });
-  revalidatePath("/");
-  revalidatePath("/kamar-belakang/projects");
-  redirect("/kamar-belakang/projects");
 }
 
 export async function deleteProject(formData: FormData) {

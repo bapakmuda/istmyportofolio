@@ -330,7 +330,8 @@ self.__SERVER_FILES_MANIFEST={
         "*.dadoftwo.web.id",
         "www.dadoftwo.web.id",
         "localhost:3000"
-      ]
+      ],
+      "bodySizeLimit": "10mb"
     },
     "repoRoot": "/Users/fird/Documents/PORT-FIRD",
     "turbopack": {
