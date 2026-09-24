@@ -1,6 +1,6 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/kamar-belakang/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__19tyevd._.js")
-R.c("server/chunks/ssr/node_modules_next_dist_0w6mzq5._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__01zesz1._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_0drixxt._.js")
 R.c("server/chunks/ssr/node_modules_next_dist_1n3w9lb._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__09atk3z._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__038l5oq._.js")

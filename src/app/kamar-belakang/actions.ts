@@ -2,6 +2,7 @@
 
 import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 
 // --- SKILLS ---
 export async function createSkill(formData: FormData) {
@@ -13,6 +14,7 @@ export async function createSkill(formData: FormData) {
     await prisma.skill.create({ data: { name, icon } });
     revalidatePath("/");
     revalidatePath("/kamar-belakang/skills");
+    redirect("/kamar-belakang/skills");
   } catch (error: any) {
     const fs = require('fs');
     fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createSkill: ' + error.message + '\n' + error.stack + '\n');
@@ -29,6 +31,7 @@ export async function updateSkill(formData: FormData) {
   await prisma.skill.update({ where: { id }, data: { name, icon } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/skills");
+  redirect("/kamar-belakang/skills");
 }
 
 export async function deleteSkill(formData: FormData) {
@@ -64,6 +67,7 @@ export async function createHistory(formData: FormData) {
   await prisma.history.create({ data: { year, title, description } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/history");
+  redirect("/kamar-belakang/history");
 }
 
 export async function updateHistory(formData: FormData) {
@@ -76,6 +80,7 @@ export async function updateHistory(formData: FormData) {
   await prisma.history.update({ where: { id }, data: { year, title, description } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/history");
+  redirect("/kamar-belakang/history");
 }
 
 export async function deleteHistory(formData: FormData) {
@@ -128,6 +133,7 @@ export async function createProject(formData: FormData) {
   });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/projects");
+  redirect("/kamar-belakang/projects");
 }
 
 export async function updateProject(formData: FormData) {
@@ -150,6 +156,7 @@ export async function updateProject(formData: FormData) {
   await prisma.project.update({ where: { id }, data });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/projects");
+  redirect("/kamar-belakang/projects");
 }
 
 export async function deleteProject(formData: FormData) {
@@ -178,6 +185,7 @@ export async function createCertificate(formData: FormData) {
   });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/certificates");
+  redirect("/kamar-belakang/certificates");
 }
 
 export async function updateCertificate(formData: FormData) {
@@ -198,6 +206,7 @@ export async function updateCertificate(formData: FormData) {
   await prisma.certificate.update({ where: { id }, data });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/certificates");
+  redirect("/kamar-belakang/certificates");
 }
 
 export async function deleteCertificate(formData: FormData) {
@@ -222,6 +231,7 @@ export async function createSocial(formData: FormData) {
   await prisma.social.create({ data: { platform, url, icon } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/socials");
+  redirect("/kamar-belakang/socials");
 }
 
 export async function updateSocial(formData: FormData) {
@@ -234,6 +244,7 @@ export async function updateSocial(formData: FormData) {
   await prisma.social.update({ where: { id }, data: { platform, url, icon } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/socials");
+  redirect("/kamar-belakang/socials");
 }
 
 export async function deleteSocial(formData: FormData) {
@@ -254,6 +265,7 @@ export async function createActionButton(formData: FormData) {
   await prisma.actionButton.create({ data: { label, url, order: 0 } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/buttons");
+  redirect("/kamar-belakang/buttons");
 }
 
 export async function updateActionButton(formData: FormData) {
@@ -265,6 +277,7 @@ export async function updateActionButton(formData: FormData) {
   await prisma.actionButton.update({ where: { id }, data: { label, url } });
   revalidatePath("/");
   revalidatePath("/kamar-belakang/buttons");
+  redirect("/kamar-belakang/buttons");
 }
 
 export async function deleteActionButton(formData: FormData) {
