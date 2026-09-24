@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
-  /* config options here */
+  env: {
+    NEXTAUTH_URL: "https://dadoftwo.web.id",
+    NEXTAUTH_SECRET: "firdyawan_super_secret_key_12345!"
+  }
 };
 
 export default nextConfig;

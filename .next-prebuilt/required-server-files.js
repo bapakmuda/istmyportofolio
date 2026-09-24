@@ -1,7 +1,10 @@
 self.__SERVER_FILES_MANIFEST={
   "version": 1,
   "config": {
-    "env": {},
+    "env": {
+      "NEXTAUTH_URL": "https://dadoftwo.web.id",
+      "NEXTAUTH_SECRET": "firdyawan_super_secret_key_12345!"
+    },
     "webpack": null,
     "typescript": {
       "ignoreBuildErrors": false

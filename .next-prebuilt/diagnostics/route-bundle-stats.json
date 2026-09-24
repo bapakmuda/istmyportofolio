@@ -1,10 +1,10 @@
 [
   {
     "route": "/kamar-belakang/visitors",
-    "firstLoadUncompressedJsBytes": 855885,
+    "firstLoadUncompressedJsBytes": 855842,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/1im3eiqx102_5.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -17,10 +17,10 @@
   },
   {
     "route": "/",
-    "firstLoadUncompressedJsBytes": 661535,
+    "firstLoadUncompressedJsBytes": 661492,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/000sj3j1xvhx5.js",
       ".next/static/chunks/3_qzc4f6k2_sj.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -33,12 +33,12 @@
   },
   {
     "route": "/kamar-belakang/skills",
-    "firstLoadUncompressedJsBytes": 550901,
+    "firstLoadUncompressedJsBytes": 550858,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
-      ".next/static/chunks/02e0166t20q64.js",
+      ".next/static/chunks/37d-4vtl2fj9k.js",
       ".next/static/chunks/2r1yt4y7y_4eu.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
       ".next/static/chunks/0fy4h0ngk1igg.js",
@@ -50,12 +50,12 @@
   },
   {
     "route": "/kamar-belakang/buttons",
-    "firstLoadUncompressedJsBytes": 549103,
+    "firstLoadUncompressedJsBytes": 549060,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
-      ".next/static/chunks/2lrammr43mhgi.js",
+      ".next/static/chunks/3w_tle6b1vuiv.js",
       ".next/static/chunks/2r1yt4y7y_4eu.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
       ".next/static/chunks/0fy4h0ngk1igg.js",
@@ -67,10 +67,10 @@
   },
   {
     "route": "/kamar-belakang/certificates",
-    "firstLoadUncompressedJsBytes": 515304,
+    "firstLoadUncompressedJsBytes": 515261,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/3m4y59ro_u33m.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -83,10 +83,10 @@
   },
   {
     "route": "/kamar-belakang/projects",
-    "firstLoadUncompressedJsBytes": 515304,
+    "firstLoadUncompressedJsBytes": 515261,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/3m4y59ro_u33m.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -99,10 +99,10 @@
   },
   {
     "route": "/kamar-belakang/login",
-    "firstLoadUncompressedJsBytes": 502309,
+    "firstLoadUncompressedJsBytes": 502266,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/1tk7ib_42p4bm.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -115,10 +115,10 @@
   },
   {
     "route": "/kamar-belakang/socials",
-    "firstLoadUncompressedJsBytes": 502132,
+    "firstLoadUncompressedJsBytes": 502089,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/36os-dzm3f_qq.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -131,10 +131,10 @@
   },
   {
     "route": "/kamar-belakang/history",
-    "firstLoadUncompressedJsBytes": 500628,
+    "firstLoadUncompressedJsBytes": 500585,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/0g541tx_e1n2h.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
@@ -147,10 +147,10 @@
   },
   {
     "route": "/kamar-belakang",
-    "firstLoadUncompressedJsBytes": 500178,
+    "firstLoadUncompressedJsBytes": 500135,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/0-a5z10lfn47-.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
       ".next/static/chunks/0fy4h0ngk1igg.js",
@@ -162,10 +162,10 @@
   },
   {
     "route": "/_not-found",
-    "firstLoadUncompressedJsBytes": 486870,
+    "firstLoadUncompressedJsBytes": 486827,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0h2qsuyze9ds1.js",
-      ".next/static/chunks/0-nx6_1wky1v0.js",
+      ".next/static/chunks/41tsm4ws5qfkf.js",
       ".next/static/chunks/3yfl9fgvivx3-.js",
       ".next/static/chunks/0fy4h0ngk1igg.js",
       ".next/static/chunks/2w6-remy08ye_.js",

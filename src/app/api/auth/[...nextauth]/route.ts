@@ -26,7 +26,7 @@ const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
-  secret: process.env.NEXTAUTH_SECRET || "fallback_secret_for_dev_mode_only",
+  secret: "firdyawan_super_secret_key_12345!",
 };
 
 const handler = NextAuth(authOptions);
