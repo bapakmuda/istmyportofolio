@@ -5,13 +5,19 @@ import { revalidatePath } from "next/cache";
 
 // --- SKILLS ---
 export async function createSkill(formData: FormData) {
-  const name = formData.get("name") as string;
-  const icon = formData.get("icon") as string;
-  if (!name || !icon) return;
-  
-  await prisma.skill.create({ data: { name, icon } });
-  revalidatePath("/");
-  revalidatePath("/kamar-belakang/skills");
+  try {
+    const name = formData.get("name") as string;
+    const icon = formData.get("icon") as string;
+    if (!name || !icon) return;
+    
+    await prisma.skill.create({ data: { name, icon } });
+    revalidatePath("/");
+    revalidatePath("/kamar-belakang/skills");
+  } catch (error: any) {
+    const fs = require('fs');
+    fs.appendFileSync('./public/error.log', new Date().toISOString() + ' createSkill: ' + error.message + '\n' + error.stack + '\n');
+    throw error;
+  }
 }
 
 export async function updateSkill(formData: FormData) {
