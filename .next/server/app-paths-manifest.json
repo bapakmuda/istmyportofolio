@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/track/route": "app/api/track/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/kamar-belakang/buttons/page": "app/kamar-belakang/buttons/page.js",
+  "/kamar-belakang/certificates/page": "app/kamar-belakang/certificates/page.js",
+  "/kamar-belakang/history/page": "app/kamar-belakang/history/page.js",
+  "/kamar-belakang/login/page": "app/kamar-belakang/login/page.js",
+  "/kamar-belakang/page": "app/kamar-belakang/page.js",
+  "/kamar-belakang/projects/page": "app/kamar-belakang/projects/page.js",
+  "/kamar-belakang/skills/page": "app/kamar-belakang/skills/page.js",
+  "/kamar-belakang/socials/page": "app/kamar-belakang/socials/page.js",
+  "/kamar-belakang/visitors/page": "app/kamar-belakang/visitors/page.js",
+  "/page": "app/page.js"
+}
