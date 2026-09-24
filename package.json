@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf .next && mv .next-prebuilt .next",
+    "build": "mkdir -p .next && cp -a .next-prebuilt/. .next/",
     "start": "next start",
     "lint": "eslint",
     "postinstall": "prisma generate || exit 0"
