@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/node_modules_next_dist_08u-7uu._.js",
+        "server/edge/chunks/node_modules_jose_dist_browser_1ajdrxb._.js",
+        "server/edge/chunks/node_modules_0ecpscs._.js",
+        "server/edge/chunks/[root-of-the-server]__13jvavz._.js",
+        "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0o3-wqd.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "entrypoint": "server/edge/chunks/turbopack-node_modules_next_dist_esm_build_templates_edge-wrapper_0o3-wqd.js",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/kamar-belakang(?:\\/((?!login).*))(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+          "originalSource": "/kamar-belakang/((?!login).*)"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "eITNWdq+iLENYRx8dBFtHeCh9lNILuo5s/hgOl3yoaw=",
+        "__NEXT_PREVIEW_MODE_ID": "4b151ef4c7a0113b8dda1dfa48c580d0",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "5d180079eca70b2e9dbd08ae8cafb5a35b474c8270691e52d295e6992b67a6e6",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "c26d3fad9025ff771a4cd0426532d855ba8503c00b60d7599fce1c91803d5371"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
+}
