@@ -64,10 +64,10 @@ export default function PortfolioSlideshow({ dbProjects = [] }: { dbProjects?: P
           </AnimatePresence>
           
           {/* Decorative HUD corners */}
-          <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-[var(--color-terminal-green)] z-10" />
-          <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-[var(--color-terminal-green)] z-10" />
-          <div className="absolute bottom-2 left-2 w-4 h-4 border-b border-l border-[var(--color-terminal-green)] z-10" />
-          <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[var(--color-terminal-green)] z-10" />
+          <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-[var(--color-terminal-green)] opacity-70 pointer-events-none z-10" />
+          <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-[var(--color-terminal-green)] opacity-70 pointer-events-none z-10" />
+          <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-[var(--color-terminal-green)] opacity-70 pointer-events-none z-10" />
+          <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[var(--color-terminal-green)] opacity-70 pointer-events-none z-10" />
         </div>
 
         {/* Right: Description area */}
