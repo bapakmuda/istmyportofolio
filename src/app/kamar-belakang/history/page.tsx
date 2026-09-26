@@ -7,7 +7,7 @@ export default async function HistoryAdminPage({ searchParams }: { searchParams:
   const params = await searchParams;
   const editId = params.edit;
   
-  const historyItems = await prisma.history.findMany({ orderBy: { createdAt: "desc" } });
+  const historyItems = await prisma.history.findMany({ orderBy: { year: "desc" } });
   const editingHistory = editId ? historyItems.find(h => h.id === editId) : null;
 
   return (
